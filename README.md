@@ -78,4 +78,28 @@ important role in classification
 
 • Wifi- Price Range of wifi phones are considerably higher. This Denotes that wifi plays an important role in classification
 
+# Models
+
+We used Logistic regression, Decision tree, Random forest and KNN algorithm for modelling. We
+checked the accuracy score and confusion matrix of each algorithm.
+
+**Logistic Regression:**
+
+Logistic Regression is actually a classification algorithm that was given the name regression due to the fact that the mathematical formulation is very similar to linear regression.
+The function used in Logistic Regression is sigmoid function or the logistic function given by:
+		f(x)= 1/1+e ^(-x)
+
+We got the following evaluation metric for the algorithm we implemented:
+
+ precision    recall  f1-score   support
+
+           0       0.92      0.88      0.90       100
+           1       0.72      0.64      0.68       100
+           2       0.57      0.58      0.58       100
+           3       0.72      0.82      0.77       100
+
+    accuracy                           0.73       400
+   macro avg       0.73      0.73      0.73       400
+weighted avg       0.73      0.73      0.73       400
+
 
