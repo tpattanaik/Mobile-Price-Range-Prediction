@@ -89,17 +89,36 @@ Logistic Regression is actually a classification algorithm that was given the na
 The function used in Logistic Regression is sigmoid function or the logistic function given by:
 		f(x)= 1/1+e ^(-x)
 
-We got the following evaluation metric for the algorithm we implemented:
+We got the accuracy of 73%, precision of 0.73, recall of 0.73 and F1 score of 0.73
 
- precision    recall  f1-score   support
+**Decision Tree:**
 
-           0       0.92      0.88      0.90       100
-           1       0.72      0.64      0.68       100
-           2       0.57      0.58      0.58       100
-           3       0.72      0.82      0.77       100
+Decision Tree is a Supervised learning technique that can be used for both classification and Regression problems, but mostly it is preferred for solving Classification problems. It is a tree-structured classifier, where internal nodes represent the features of a dataset, branches represent the decision rules and each leaf node represents the outcome. In a Decision tree, there are two nodes, which are the Decision Node and Leaf Node. Decision nodes are used to make any decision and have multiple branches, whereas Leaf nodes are the output of those decisions and do not contain any further branches. The decisions or the test are performed on the basis of features of the given dataset. It is a graphical representation for getting all the possible solutions to a problem/decision based on given conditions. 
 
-    accuracy                           0.73       400
-   macro avg       0.73      0.73      0.73       400
-weighted avg       0.73      0.73      0.73       400
+We got the accuracy of 82%, precision of 0.83, recall of 0.83 and F1 score of 0.83
+
+**Random Forest Classifier:**
+
+Random Forest is a bagging type of Decision Tree Algorithm that creates a number of decision trees from a randomly selected subset of the training set, collects the labels from these subsets and then averages the final prediction depending on the most number of times a label has been predicted out of all.
+
+We got the accuracy of 90%, precision of 0.90, recall of 0.90 and F1 score of 0.90
+
+**K Nearest Neighbours:**
+
+K-Nearest Neighbour is one of the simplest Machine Learning algorithms based on Supervised Learning technique. K-NN algorithm assumes the similarity between the new case/data and available cases and put the new case into the category that is most similar to the available categories. K-NN algorithm stores all the available data and classifies a new data point based on the similarity. This means when new data appears then it can be easily classified into a well suite category by using K- NN algorithm. K-NN algorithm can be used for Regression as well as for Classification but mostly it is used for the Classification problems. It is also called a lazy learner algorithm because it does not learn from the training set immediately instead it stores the dataset and at the time of classification, it performs an action on the dataset. KNN algorithm at the training phase just stores the dataset and when it gets new data, then it classifies that data into a category that is much similar to the new data.
+
+We got the accuracy of 95%, precision of 0.95, recall of 0.95 and F1 score of 0.95
+
+# Conclusion:
+
+After training our dataset with four different model, we conclude that KNN is the best model for our
+
+dataset (via the highest accuracy score of 0.95). The best optimum K number is to be 9 for this dataset.
+
+
+
+
+
+
 
 
