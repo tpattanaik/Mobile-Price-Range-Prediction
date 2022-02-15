@@ -31,3 +31,51 @@ In this project, we are going to explore and analyze a dataset which contains sp
 13. Confusion matrix
 14. Accuracy score
 15. Gridsearch CV
+
+# Approaches
+
+--> After loading and reading the dataset in pandas Dataframe, we know that our dataset has 2000 rows and
+21 columns.
+
+--> We first imported all necessary libraries in our notebook which required for the analysis.
+
+--> During Data exploration, we got to know that there are no Null values in the dataset.
+
+--> The last attribute i.e., price_range column is a target variable. So our data have labels and we applied
+supervised learning algorithms. We defined our target column as “Y” and rest of the data which are used
+as inputs as “X”.
+
+--> There are four price ranges as target values, so we did multiclass classification in our project.
+
+--> Our dataset was perfectly balanced with 25% share to each type of price range.
+
+--> During EDA, we got following insights from the data which helped us to identify which are the factors to
+get a price range. Lets go through each EDA of columns:
+
+• Battery Power- Low power batteries are slightly more in count
+
+• Clock speed- Variance of clock speed is slightly more for mobiles in Category '0'
+
+• Dual sim- Slightly more number of phones have dual sim. Price Range of dual sim phones are
+considerably higher. This Denotes that Dual sim plays an important role in classification
+
+• Fc - Front Camera mega pixels- price range and fc have less correlation
+
+• Four G- Price Range of 4G phones are considerably higher. This Denotes that 4G plays an
+important role in classification
+
+• Mobile weight- Almost evenly spread across data set
+
+• N_cores - Number of cores of processor- 67 mobiles in Price range of 0 is having 8 Cores
+
+• Sc_h - Screen Height of mobile in cm- Some screen sizes are in high price range
+
+• Sc_w - Screen Width of mobile in cm- Width ranges mostly in 0-7
+
+• Three G- Price Range of 3G phones are considerably higher. This Denotes that 3G plays an important role in classification
+
+• Touch Screen- Price Range of touch screen phone is low
+
+• Wifi- Price Range of wifi phones are considerably higher. This Denotes that wifi plays an important role in classification
+
+
